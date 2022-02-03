@@ -7,7 +7,7 @@ provider "oci" {
    fingerprint = "9c:ed:78:5d:da:35:17:05:0a:6b:93:be:b0:84:38:5c"
    private_key_path = "./amitTestPrivate.pem"
 }
-/*
+
 
 resource "oci_core_instance" "testhostAmit" {
   # Required
@@ -41,5 +41,3 @@ resource "oci_core_instance" "testhostAmit" {
   #}
   preserve_boot_volume = false
 }
-
-*/
