@@ -19,7 +19,7 @@ resource "oci_core_instance" "testhostAmit" {
   // compartment_id =  "ocid1.compartment.oc1..aaaaaaaammdmuwe7hgei2iu4lar6rtg7o4gmvnp572lfxvgwo5xky4z6ajwa"
   // The below compartment is for Partner Tenancy
    compartment_id =  "ocid1.compartment.oc1..aaaaaaaad4r5xrowh7vfojhsifwew473fwruqd5asuppfwzqytoyml6lizda"
-  shape               = "VM.Standard.E2.1.Micro"
+  shape               = "VM.Standard.E4.Flex"
   shape_config {
     memory_in_gbs = 1
     ocpus         = 1
