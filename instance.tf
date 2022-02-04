@@ -1,11 +1,41 @@
 
-provider "oci" {
+/*provider "oci" {
    region = "us-ashburn-1"
    //alias = "phx"
    tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaa4mzf57gl7afpkuhti3rq76gie762ciyfwuvu6xn4tcxndj7zhi3q"
    user_ocid = "ocid1.user.oc1..aaaaaaaazqp7tubplumg7ej2lfcdwwwgifjywwww4ct33ntv3fsixkbtybpa"
    fingerprint = "8e:95:5f:54:c0:f5:28:b3:fe:9b:0b:1f:a8:e7:1e:6b"
    private_key_path = "./amitTestPrivatePartner.pem"
+}
+*/
+   
+variable "tenancy_ocid" {
+}
+
+variable "user_ocid" {
+}
+
+variable "fingerprint" {
+}
+
+variable "private_key" {
+}
+
+//variable "ssh_public_key" {
+//}
+
+//variable "compartment_ocid" {
+//}
+
+variable "region" {
+}
+
+provider "oci" {
+  region           = var.region
+  tenancy_ocid     = var.tenancy_ocid
+  user_ocid        = var.user_ocid
+  fingerprint      = var.fingerprint
+  private_key      = var.private_key
 }
 
 
