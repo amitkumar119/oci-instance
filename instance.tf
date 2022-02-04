@@ -44,7 +44,7 @@ provider "oci" {
 
 resource "oci_core_instance" "testhostAmit" {
   # Required
-  count = 1
+  count = 2
   availability_domain = "IYfK:US-ASHBURN-AD-1"
   // For Compartment = AmitChildCompartment 
   //compartment_id      = "ocid1.compartment.oc1..aaaaaaaaywbpujwoxt7wpxvxawpv2xneun36ccmwk4baal7gpjmsswosmrwq"
