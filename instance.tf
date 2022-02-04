@@ -21,11 +21,14 @@ variable "fingerprint" {
 variable "private_key" {
 }
 
-//variable "ssh_public_key" {
-//}
+/*
+   variable "ssh_public_key" {
+}
 
-//variable "compartment_ocid" {
-//}
+variable "compartment_ocid" {
+}
+
+*/
 
 variable "region" {
 }
